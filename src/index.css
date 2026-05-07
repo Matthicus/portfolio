@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+body {
+  font-family: "titular", sans-serif;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.logo-container .logo-face-smile,
+.logo-container .logo-face-surprised {
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  z-index: 10;
+}
+
+.logo-container .logo-text {
+  transition: opacity 0.4s ease;
+  z-index: 5;
+}
+
+/* On hover */
+.logo-container:hover .logo-text {
+  opacity: 0;
+}
+
+.logo-container:hover .logo-face-smile {
+  opacity: 0;
+  transform: scale(1.15);
+}
+
+.logo-container:hover .logo-face-surprised {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+.footer-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.antwerp {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.project-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.text-animation {
+
+  font-size: 300px;
+  text-shadow: 0 2ex 0 black;
+  overflow: hidden;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 1;
+
+  text-box-trim: both;
+  text-box-edge: cap alphabetic;
+
+  span {
+    position: relative;
+    display: inline-block;
+  }
+
+  &:hover {
+    span {
+      animation: up 0.4s forwards;
+      animation-delay: calc(sibling-index() * 0.05s);
+    }
+  }
+
+  &:not(:hover) {
+    span {
+      animation: down 0.4s forwards;
+      animation-delay: calc(sibling-index() * 0.05s);
+    }
+  }
+
+}
+
+@keyframes up {
+  100% {
+    translate: 0 -2ex;
+  }
+}
+
+@keyframes down {
+
+  0% {
+    translate: 0 -2ex;
+  }
+}
