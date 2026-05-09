@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import menuHero from "../assets/menu_hero_page.png";
 import dudeHero from "../assets/dude_hero_page.png";
@@ -24,34 +24,34 @@ const positions = [
 ];
 
 const TextFlip = () => {
+  const [scale, setScale] = useState(1);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScale(Math.min(1, window.innerWidth / 1300));
+      setIsMobile(window.innerWidth < 1024);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
-    <section className="  pt-12 pb-12">
-      <div
-        style={{
-          position: "relative",
-          height: "380px",
-          maxWidth: "1200px",
-          margin: "0 auto",
-          padding: "0 24px",
-          pointerEvents: "none",
-        }}
-      >
+    <section className="pt-12 pb-12">
+      {/* Mobile grid */}
+      <div className="lg:hidden grid grid-cols-2 gap-3 px-4">
         {images.map((img, i) => (
           <motion.img
             key={i}
             src={img.src}
             alt={img.alt}
+            className={
+              i === 4 ? "col-span-2 mx-auto w-2/3" : "w-full rounded-xl"
+            }
+            style={{ rotate: img.rotate }}
             initial={{ opacity: 0, y: 60, scale: 0.8 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            style={{
-              pointerEvents: "auto",
-              position: "absolute",
-              width: "300px",
-              rotate: img.rotate,
-              zIndex: i,
-              cursor: "pointer",
-              ...positions[i],
-            }}
+            animate={{ opacity: 1, y: isMobile ? [0, -8, 0] : 0, scale: 1 }}
             whileHover={{
               scale: 1.05,
               zIndex: 10,
@@ -73,16 +73,85 @@ const TextFlip = () => {
             }}
             transition={{
               delay: i * 0.2,
-              type: "spring",
-              stiffness: 180,
-              damping: 18,
-              mass: 1.2,
+              opacity: {
+                duration: 0.5,
+              },
+              scale: { type: "spring", stiffness: 180, damping: 18, mass: 1.2 },
+              y: isMobile
+                ? {
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    delay: i * 0.4,
+                  }
+                : { type: "spring", stiffness: 180, damping: 18, mass: 1.2 },
             }}
           />
         ))}
       </div>
+
+      {/* Desktop layout */}
+      <div className="hidden lg:block w-full overflow-hidden">
+        <div
+          style={{
+            position: "relative",
+            height: "380px",
+            width: "1180px",
+            pointerEvents: "none",
+            transform: `scale(${scale})`,
+            transformOrigin: "top left",
+            marginLeft: `calc(50% - ${(1180 * scale) / 2}px)`,
+          }}
+        >
+          {images.map((img, i) => (
+            <motion.img
+              key={i}
+              src={img.src}
+              alt={img.alt}
+              initial={{ opacity: 0, y: 60, scale: 0.8 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              style={{
+                pointerEvents: "auto",
+                position: "absolute",
+                width: "300px",
+                rotate: img.rotate,
+                zIndex: i,
+                cursor: "pointer",
+                ...positions[i],
+              }}
+              whileHover={{
+                scale: 1.05,
+                zIndex: 10,
+                transition: {
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 6,
+                  mass: 0.3,
+                },
+              }}
+              whileTap={{
+                scale: 0.9,
+                transition: {
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 6,
+                  mass: 0.3,
+                },
+              }}
+              transition={{
+                delay: i * 0.2,
+                type: "spring",
+                stiffness: 180,
+                damping: 18,
+                mass: 1.2,
+              }}
+            />
+          ))}
+        </div>
+      </div>
+
       <Link to="/work">
-        <h2 className="max-w-[1180px] mx-auto px-6 text-right text-3xl font-bold -mt-8 cursor-pointer">
+        <h2 className="max-w-[1180px] mx-auto px-6 text-center lg:text-right text-5xl lg:text-3xl font-bold mt-4 lg:-mt-8 cursor-pointer">
           More work &rarr;
         </h2>
       </Link>

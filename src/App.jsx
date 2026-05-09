@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import TextFlip from "./components/TextFlip";
 import Footer from "./components/Footer";
 import About from "./components/About";
-import Contact from "./components/Contact";
+
 import Work from "./pages/Work";
 
 function App() {

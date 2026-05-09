@@ -3,31 +3,31 @@ import snow from "../assets/picture_about_snow.png";
 
 const About = () => {
   return (
-    <section className=" flex max-w-2xl mx-auto px-6 py-24 gap-12">
-      <div className="">
-        <h1 className="text-8xl font-bold mb-8">Hi,</h1>
-        <p className="text-gray-600 mb-6 text-2xl">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-        <p className="text-gray-600 mb-6 text-2xl">
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum.
-        </p>
-        <p className="text-gray-600 text-2xl">
-          Pellentesque habitant morbi tristique senectus et netus et malesuada
-          fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
-          ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
-          egestas semper.
-        </p>
-      </div>
-      <div className="flex flex-col gap-4">
+    <section className=" flex flex-col lg:flex-row lg:items-center lg:align-center max-w-2xl mx-auto px-6 py-24 gap-12   ">
+      <div className="flex flex-col  gap-4 order-2 lg:order-1 lg:w-1000">
         <img src={summer} alt="summer" className="rounded-xl" />
         <img src={snow} alt="snow" className="rounded-xl" />
+      </div>
+      <div className="">
+        <h1 className="text-9xl font-bold mb-8">Hi,</h1>
+        <p className="text-gray-600 mb-6 text-6xl lg:text-2xl intro-text ">
+          I'm Matthice, an ordinary Flemish guy that's happiest behind the
+          screen bringing something new into the world. From{" "}
+          <span className="bg-yellow-300">
+            branding, to logo, marketing and packaging design{" "}
+          </span>{" "}
+          and everything in between! I also have experience in software
+          development, specializing mainly in{" "}
+          <span className="bg-yellow-300 ">web design</span> and frontend
+          development. I can work comfortably with{" "}
+          <span className="bg-yellow-300">
+            {" "}
+            Illustrator, Photoshop, InDesign{" "}
+          </span>{" "}
+          and love to build in React. I also dibble dabble in video editing now
+          and again. If you liked this poorly written introduction, don't
+          hesitate to contact me so we can make something great together!
+        </p>
       </div>
     </section>
   );
