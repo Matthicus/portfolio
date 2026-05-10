@@ -23,7 +23,7 @@ const Footer = () => {
     >
       <div className="flex flex-wrap justify-around gap-8 items-center">
         <section className="flex flex-col gap-2">
-          <h1 className="text-6xl md:text-7xl lg:text-8xl text-center footer-title bg-white p-2 rounded-xl">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-center footer-title bg-white p-2 rounded-xl">
             {t[lang].contact}
           </h1>
           <div className="flex flex-wrap gap-1 sm:gap-4 justify-center">

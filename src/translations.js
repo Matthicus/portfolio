@@ -14,7 +14,7 @@ export const t = {
     intro7:
       "and love to build in React. I also dibble dabble in video editing now and again. If you liked this poorly written introduction, don't hesitate to contact me so we can make something great together!",
     locatie: "Antwerp, Belgium",
-    contact: "HIT ME UP!",
+    contact: "LET'S CONNECT!",
   },
   nl: {
     about: "Over mij",
