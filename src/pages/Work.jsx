@@ -9,7 +9,7 @@ const Work = () => {
         <div className="text-right  pt-15 pr-17">
           <Link
             to="/"
-            className="inline-block text-3xl pl-6 cursor-pointer hover:bg-yellow-300"
+            className="inline-block text-3xl pl-6 cursor-pointer relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bottom-0 after:left-0 after:bg-black after:transition-all after:duration-300 hover:after:w-full"
           >
             &larr; Home
           </Link>

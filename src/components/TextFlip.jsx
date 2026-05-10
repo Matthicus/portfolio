@@ -151,7 +151,7 @@ const TextFlip = () => {
       </div>
 
       <Link to="/work">
-        <h2 className="max-w-[1180px] mx-auto px-6 text-center lg:text-right text-5xl lg:text-3xl font-bold mt-4 lg:-mt-8 cursor-pointer">
+        <h2 className="  max-w-[1180px] mx-auto px-6 text-center lg:text-right text-5xl lg:text-3xl font-bold mt-4 lg:-mt-8 cursor-pointer ">
           More work &rarr;
         </h2>
       </Link>
