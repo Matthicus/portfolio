@@ -6,6 +6,8 @@ import coffeeHero from "../assets/coffee_hero_page.png";
 import chipsHero from "../assets/chips_hero_page.png";
 import alienhero from "../assets/alien_hero_page.png";
 import { Link } from "react-router-dom";
+import { useLang } from "../context/LanguageContext";
+import { t } from "../translations";
 
 const images = [
   { src: menuHero, alt: "Menu", rotate: "-4deg" },
@@ -26,6 +28,7 @@ const positions = [
 const TextFlip = () => {
   const [scale, setScale] = useState(1);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+  const { lang } = useLang();
 
   useEffect(() => {
     const handleResize = () => {
@@ -152,7 +155,7 @@ const TextFlip = () => {
 
       <Link to="/work">
         <h2 className="  max-w-[1180px] mx-auto px-6 text-center lg:text-right text-5xl lg:text-3xl font-bold mt-4 lg:-mt-8 cursor-pointer ">
-          More work &rarr;
+          {t[lang].moreWork}
         </h2>
       </Link>
     </section>

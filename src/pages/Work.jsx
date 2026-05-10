@@ -1,4 +1,5 @@
 import Footer from "../components/Footer";
+
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import projects from "../data/projects";
