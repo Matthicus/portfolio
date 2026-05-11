@@ -10,9 +10,17 @@ import chipsPakket from "../assets/chipsdale_assets/pakket_mockup.png";
 import cups from "../assets/stoneground_assets/multiplecups_mockup.png";
 import shop from "../assets/stoneground_assets/shop_mockup.png";
 import sign from "../assets/stoneground_assets/sign_mockup.png";
+import pedicureCard from "../assets/pedicure_assets/card.png";
+import pedicureLogo from "../assets/pedicure_assets/logo_naomi.png";
 
 const projects = [
-  { id: "apple-1", title: "naomi's pedicure", img: img1, desc: "Description" },
+  {
+    id: "apple-1",
+    title: "Naomi's Pedicure",
+    img: img1,
+    desc: "Paper Palace is an independent film company based in Portland, Oregon. In 2020, I designed the poster for their award winning documentary, Jump the Fence. In 2022, I animated their vanity card. And most recently, I created the poster for their upcoming production, Wrap Me in a Sheet. ",
+    images: [pedicureCard, pedicureLogo],
+  },
   {
     id: "apple-2",
     title: "chips 'n dale foodtruck ",

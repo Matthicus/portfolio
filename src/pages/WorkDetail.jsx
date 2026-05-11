@@ -12,15 +12,17 @@ const WorkDetail = () => {
     <div className="min-h-screen flex flex-col">
       <div className="flex-1 px-6 md:px-12 lg:px-24">
         {/* Header */}
-        <div className="flex items-center justify-around pt-12 pb-6 mb-10">
-          <div className="flex flex-col">
-            <h2 className="text-6xl font-bold mb-3">{project.title}</h2>
-            <h1 className="text-5xl md:text-3xl font-black italic leading-none">
+        <div className=" flex flex-col lg:flex lg:flex-row items-center justify-around pt-12 pb-6 mb-10">
+          <div className=" flex gap-2 lg:flex lg:flex-col">
+            <h2 className=" text-4xl md:text-5xl lg:text-6xl font-bold mb-3">
+              {project.title}
+            </h2>
+            <h1 className="text-2xl md:text-3xl font-black italic leading-none">
               Logo, 2025
             </h1>
           </div>
           <div className="pt-2  max-w-sm">
-            <p className="text-xl text-gray-700 leading-relaxed  italic">
+            <p className="  text-3xl lg:text-xl text-gray-700 leading-relaxed  italic">
               {project.desc}
             </p>
           </div>
@@ -53,7 +55,7 @@ const WorkDetail = () => {
         <div className="py-8">
           <Link
             to="/work"
-            className="text-xl uppercase font-bold tracking-widest hover:opacity-50 transition-opacity"
+            className=" text-2xl lg:text-xl uppercase font-bold tracking-widest hover:opacity-50 transition-opacity"
           >
             ← Back
           </Link>
