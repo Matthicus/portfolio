@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { motion } from "motion/react";
-import menuHero from "../assets/menu_hero_page.png";
-import dudeHero from "../assets/dude_hero_page.png";
-import coffeeHero from "../assets/coffee_hero_page.png";
-import chipsHero from "../assets/chips_hero_page.png";
-import alienhero from "../assets/alien_hero_page.png";
+import menuHero from "../assets/menu_hero_page.webp";
+import dudeHero from "../assets/dude_hero_page.webp";
+import coffeeHero from "../assets/coffee_hero_page.webp";
+import chipsHero from "../assets/chips_hero_page.webp";
+import alienhero from "../assets/alien_hero_page.webp";
 import { Link } from "react-router-dom";
 import { useLang } from "../context/LanguageContext";
 import { t } from "../translations";

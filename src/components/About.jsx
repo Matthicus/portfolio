@@ -1,5 +1,5 @@
-import summer from "../assets/picture_about_summer.png";
-import snow from "../assets/picture_about_snow.png";
+import summer from "../assets/picture_about_summer.webp";
+import snow from "../assets/picture_about_snow.webp";
 import { useLang } from "../context/LanguageContext";
 import { t } from "../translations";
 

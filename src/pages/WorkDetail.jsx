@@ -22,7 +22,7 @@ const WorkDetail = () => {
             </h1>
           </div>
           <div className="pt-2  max-w-sm">
-            <p className="  text-3xl lg:text-xl text-gray-700 leading-relaxed  italic">
+            <p className="  text-3xl lg:text-2xl text-gray-700 leading-relaxed  italic">
               {project.desc}
             </p>
           </div>
