@@ -15,13 +15,18 @@ import pedicureCard from "../assets/pedicure_assets/card.png";
 import pedicureLogo from "../assets/pedicure_assets/logo_naomi.png";
 import menuMockup from "../assets/cocktailmenu_assets/menu_workdetail.webp";
 import menuMockup2 from "../assets/cocktailmenu_assets/menu_mockup2.webp";
-
+import bigMenu from "../assets/cocktailmenu_assets/cocktailmenu_qualitymockup.webp";
+import bigMenu2 from "../assets/cocktailmenu_assets/menu_twopages.webp";
+import bigMenu4 from "../assets/cocktailmenu_assets/cocktail_fourpages_mockup.webp";
 const projects = [
   {
     id: "naomis-pedicure",
     title: "Naomi's Pedicure",
     img: naomiCard,
-    desc: "...",
+    desc: {
+      en: "I met Naomi through a shared online group for young entrepreneurs. I saw she needed a designer to smooth out the rough edges of her logo and was glad to help!",
+      nl: "Ik heb Naomi leren kennen via een gedeelde onlinegroep voor jonge ondernemers. Ik zag dat ze een designer nodig had om de ruwe randjes van haar logo af te werken, en ik hielp haar daar graag mee!",
+    },
     images: [pedicureCard, pedicureLogo],
   },
   {
@@ -47,12 +52,12 @@ const projects = [
   {
     id: "cocktail-menu",
     title: "Cocktail Menu",
-    img: cocktailMenu,
+    img: bigMenu,
     desc: {
       en: "My good friend Gerben is a bit of a cocktail snob and organizes one of these get-togethers about twice a year, where he basically spends about 6 hours in the kitchen brewing the craziest concoctions. He also asks me to make a menu for it every time. This was one of the recent ones I was quite pleased with.",
       nl: "Mijn goede vriend Gerben is een beetje een cocktailsnob en organiseert ongeveer twee keer per jaar zo’n bijeenkomst, waarbij hij zo’n 6 uur in de keuken staat om de gekste brouwsels te maken. Hij vraagt mij ook elke keer om er een menu voor te ontwerpen. Dit was een van de recentere waar ik best tevreden mee was.",
     },
-    images: [menuMockup, menuMockup2],
+    images: [bigMenu, bigMenu2, bigMenu4],
   },
   {
     id: "overload",
