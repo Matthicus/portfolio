@@ -45,7 +45,7 @@ const WorkDetail = () => {
           <img
             src={project.images[1]}
             alt=""
-            className="w-full rounded-xl object-cover"
+            className="w-1/2 mx-auto mt-15  rounded-xl object-cover"
             loading="lazy"
           />
           <img

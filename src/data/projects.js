@@ -1,8 +1,9 @@
 import naomiCard from "../assets/naomispedicure_card.webp";
 import chipsDale from "../assets/chips_dale.webp";
-import stonegroundStickers from "../assets/stoneground_assets/stoneground_stickers.webp";
+import stoneGroundCoffee from "../assets/stonegroundcoffee.webp";
 import cocktailMenu from "../assets/menu_workpage.webp";
 import overloadMockup from "../assets/overload_assets/overload_mockup.webp";
+import chipsDaleStickers from "../assets/chipsdale_assets/chipndale_stickers.webp";
 
 import chipsLogo from "../assets/chipsdale_assets/chipndale_logo.png";
 import chipsTruck from "../assets/chipsdale_assets/foodtruck_mockup.png";
@@ -26,14 +27,17 @@ const projects = [
   {
     id: "chips-n-dale",
     title: "Chips 'n Dale foodtruck",
-    img: chipsDale,
-    desc: "Client wanted the iconic Chip 'n Dale engulfed in flames displayed on his logo. Of course, I couldn’t fulfill that request exactly since I didn’t want to get sued, so I tweaked the boys a little and gave them an alternative look. This one was for a food truck mainly specializing in fish and chips.",
+    img: chipsDaleStickers,
+    desc: {
+      en: "This one came out of the ether through an infamous Facebook DM. He asked me to include the iconic chipmunks blazing in a fire for the logo of his food truck. Awesome request, but I was not trying to get sued, so I tweaked the little critters a bit.",
+      nl: "Deze kwam letterlijk uit het niets via een legendarische Facebook-DM. Hij vroeg me om de iconische chipmunks in lichterlaaie op te nemen in het logo van zijn foodtruck. Geweldig verzoek, maar ik had geen zin om aangeklaagd te worden, dus heb ik die kleine beestjes een beetje aangepast.",
+    },
     images: [chipsTruck, chipsLogo, chipsPakket],
   },
   {
     id: "stone-ground-coffee",
     title: "Stone Ground Coffee",
-    img: stonegroundStickers,
+    img: stoneGroundCoffee,
     desc: {
       en: "Client wanted to open a coffee shop with “some edge to it”. I played around in Illustrator drawing crude graphics of letters since I couldn’t find a font I was happy with for the project. Eventually I came upon the design you see here, which I thought accompanied the edgy feeling they were going for wonderfully.",
       nl: "De klant wilde een koffiebar openen met een eigenzinnige uitstraling. Ik heb wat geëxperimenteerd met Illustrator en ruwe letterontwerpen gemaakt, omdat ik geen lettertype kon vinden dat me beviel. Uiteindelijk kwam ik uit op het ontwerp dat je hier ziet, dat naar mijn mening perfect aansloot bij de stoere sfeer die ze voor ogen hadden.",
@@ -44,14 +48,20 @@ const projects = [
     id: "cocktail-menu",
     title: "Cocktail Menu",
     img: cocktailMenu,
-    desc: "...",
+    desc: {
+      en: "My good friend Gerben is a bit of a cocktail snob and organizes one of these get-togethers about twice a year, where he basically spends about 6 hours in the kitchen brewing the craziest concoctions. He also asks me to make a menu for it every time. This was one of the recent ones I was quite pleased with.",
+      nl: "Mijn goede vriend Gerben is een beetje een cocktailsnob en organiseert ongeveer twee keer per jaar zo’n bijeenkomst, waarbij hij zo’n 6 uur in de keuken staat om de gekste brouwsels te maken. Hij vraagt mij ook elke keer om er een menu voor te ontwerpen. Dit was een van de recentere waar ik best tevreden mee was.",
+    },
     images: [menuMockup, menuMockup2],
   },
   {
     id: "overload",
     title: "Overload",
     img: overloadMockup,
-    desc: "...",
+    desc: {
+      en: "Overload was a progressive fitness tracker concept app I cooked up last year for my full-stack development final project. I did not end up using it since the core idea had already been done more than a thousand times before. However, I really like the design and feel of the design, hence why I’m including it here.",
+      nl: "Overload was een concept-app voor een progressieve fitness tracker die ik vorig jaar bedacht heb voor mijn full-stack eindproject. Uiteindelijk heb ik het niet gebruikt, aangezien het kernidee al meer dan duizend keer eerder was gedaan. Toch vind ik het design en de feel van het ontwerp nog steeds erg sterk, daarom neem ik het hier mee op.",
+    },
     images: [overloadMockup],
   },
 ];

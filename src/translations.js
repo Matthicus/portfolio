@@ -4,7 +4,7 @@ export const t = {
     moreWork: "More work →",
     hi: "Hi,",
     intro1:
-      "I'm Matthice, an ordinary Flemish guy that's happiest behind the screen bringing something new into the world. From",
+      "I'm Matthice, an ordinary Flemish guy that's happiest when he's bringing something new into the world. From",
     intro2: "branding, to logo, marketing and packaging design",
     intro3:
       "and everything in between! I also have experience in software development, specializing mainly in",
@@ -22,7 +22,7 @@ export const t = {
     moreWork: "Meer werk →",
     hi: "Hoi,",
     intro1:
-      "Ik ben Matthice, een gewone Vlaming die het gelukkigst is achter het scherm met iets nieuws te maken. Van",
+      "Ik ben Matthice, een gewone Vlaming die het gelukkigst is wanneer hij iets nieuws de wereld kan intoveren. Van",
     intro2: "branding, logo, marketing en verpakkingsdesign",
     intro3:
       "en alles daartussenin! Ik heb ook ervaring in softwareontwikkeling, met een focus op",
