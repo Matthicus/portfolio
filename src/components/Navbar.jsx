@@ -8,25 +8,21 @@ import { t } from "../translations";
 
 const Navbar = () => {
   const { lang, toggleLang } = useLang();
+
   return (
-    <nav className=" fixed top-0 left-0 right-0 bg-white z-50 flex items-center justify-around pt-17 lg:justify-between pt-4 lg:pt-15 pb-5 px-6 md:px-20 lg:px-40 ">
-      <div className="  flex items-center gap-6 lg:gap-12">
+    <nav className="fixed top-0 left-0 right-0 bg-white z-50 flex items-center justify-around lg:justify-between pt-4 lg:pt-15 pb-5 px-6 md:px-20 lg:px-40">
+      <div className="flex items-center gap-6 lg:gap-12">
         <div className="relative w-28 h-28 md:w-36 md:h-36 cursor-pointer logo-container">
-          {/* Text layer - goes behind */}
           <img
             src={logoText}
             alt="Storms Matthice text"
             className="absolute inset-0 w-full h-full logo-text"
           />
-
-          {/* Smiling face - default state */}
           <img
             src={logoFull}
             alt="logo"
             className="absolute inset-0 w-full h-full logo-face-smile"
           />
-
-          {/* Surprised face - shows on hover */}
           <img
             src={logoFace}
             alt="logo surprised"
@@ -34,12 +30,13 @@ const Navbar = () => {
           />
         </div>
         <button
-          className="text-xl lg:text-3xl cursor-pointer "
+          className="text-xl lg:text-3xl cursor-pointer"
           onClick={toggleLang}
         >
           {lang === "en" ? "NL" : "EN"}
         </button>
       </div>
+
       <ul className="flex items-center gap-6 lg:gap-12 text-xl lg:text-3xl">
         <li className="hidden lg:block">
           <a
@@ -49,36 +46,30 @@ const Navbar = () => {
             {t[lang].about}
           </a>
         </li>
-
-        <div className="flex gap-7 lg:gap-3">
-          <li>
-            <a
-              href="https://wa.me/32468217828"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={whatsapp}
-                className="h-12 w-12 lg:h-8 lg:w-8 cursor-pointer"
-                alt=""
-              />
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="https://www.instagram.com/matthicestorms/"
-              target="_blank"
-              rel=" noopener noreferrer"
-            >
-              <img
-                src={insta}
-                className="h-12 w-12 lg:h-8 lg:w-8 cursor-pointer"
-                alt=""
-              />
-            </a>
-          </li>
-        </div>
+        <li className="flex gap-7 lg:gap-3">
+          <a
+            href="https://wa.me/32468217828"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={whatsapp}
+              className="h-12 w-12 lg:h-8 lg:w-8"
+              alt="WhatsApp"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/matthicestorms/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={insta}
+              className="h-12 w-12 lg:h-8 lg:w-8"
+              alt="Instagram"
+            />
+          </a>
+        </li>
       </ul>
     </nav>
   );

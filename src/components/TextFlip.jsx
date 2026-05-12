@@ -25,6 +25,12 @@ const positions = [
   { top: "25px", left: "880px" },
 ];
 
+const springSnappy = { type: "spring", stiffness: 400, damping: 6, mass: 0.3 };
+const springSmooth = { type: "spring", stiffness: 180, damping: 18, mass: 1.2 };
+
+const hoverProps = { scale: 1.05, zIndex: 10, transition: springSnappy };
+const tapProps = { scale: 0.9, transition: springSnappy };
+
 const TextFlip = () => {
   const [scale, setScale] = useState(1);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
@@ -55,31 +61,12 @@ const TextFlip = () => {
             style={{ rotate: img.rotate }}
             initial={{ opacity: 0, y: 60, scale: 0.8 }}
             animate={{ opacity: 1, y: isMobile ? [0, -8, 0] : 0, scale: 1 }}
-            whileHover={{
-              scale: 1.05,
-              zIndex: 10,
-              transition: {
-                type: "spring",
-                stiffness: 400,
-                damping: 6,
-                mass: 0.3,
-              },
-            }}
-            whileTap={{
-              scale: 0.9,
-              transition: {
-                type: "spring",
-                stiffness: 400,
-                damping: 6,
-                mass: 0.3,
-              },
-            }}
+            whileHover={hoverProps}
+            whileTap={tapProps}
             transition={{
               delay: i * 0.2,
-              opacity: {
-                duration: 0.5,
-              },
-              scale: { type: "spring", stiffness: 180, damping: 18, mass: 1.2 },
+              opacity: { duration: 0.5 },
+              scale: springSmooth,
               y: isMobile
                 ? {
                     duration: 3,
@@ -87,7 +74,7 @@ const TextFlip = () => {
                     ease: "easeInOut",
                     delay: i * 0.4,
                   }
-                : { type: "spring", stiffness: 180, damping: 18, mass: 1.2 },
+                : springSmooth,
             }}
           />
         ))}
@@ -122,39 +109,16 @@ const TextFlip = () => {
                 cursor: "pointer",
                 ...positions[i],
               }}
-              whileHover={{
-                scale: 1.05,
-                zIndex: 10,
-                transition: {
-                  type: "spring",
-                  stiffness: 400,
-                  damping: 6,
-                  mass: 0.3,
-                },
-              }}
-              whileTap={{
-                scale: 0.9,
-                transition: {
-                  type: "spring",
-                  stiffness: 400,
-                  damping: 6,
-                  mass: 0.3,
-                },
-              }}
-              transition={{
-                delay: i * 0.2,
-                type: "spring",
-                stiffness: 180,
-                damping: 18,
-                mass: 1.2,
-              }}
+              whileHover={hoverProps}
+              whileTap={tapProps}
+              transition={{ delay: i * 0.2, ...springSmooth }}
             />
           ))}
         </div>
       </div>
 
       <Link to="/work">
-        <h2 className="  max-w-[1180px] mx-auto px-6 text-center lg:text-right text-5xl lg:text-3xl font-bold mt-4 lg:-mt-8 cursor-pointer ">
+        <h2 className="max-w-[1180px] mx-auto px-6 text-center lg:text-right text-5xl lg:text-3xl font-bold mt-4 lg:-mt-8 cursor-pointer">
           {t[lang].moreWork}
         </h2>
       </Link>

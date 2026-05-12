@@ -15,6 +15,7 @@ export const t = {
       "and love to build in React. I also dibble dabble in video editing now and again. If you liked this poorly written introduction, don't hesitate to contact me so we can make something great together!",
     locatie: "Antwerp, Belgium",
     contact: "LET'S CONNECT!",
+    back: " ← BACK",
   },
   nl: {
     about: "Over mij",
@@ -32,5 +33,6 @@ export const t = {
       "en bouw graag in React. Af en toe doe ik ook aan videobewerking. Als je deze slecht geschreven introductie toch kon waarderen, aarzel dan niet om contact op te nemen zodat we samen iets moois kunnen maken!",
     locatie: "Antwerpen, België",
     contact: "CONTACTEER MIJ!",
+    back: "← TERUG",
   },
 };

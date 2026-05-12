@@ -2,30 +2,17 @@ import summer from "../assets/picture_about_summer.webp";
 import snow from "../assets/picture_about_snow.webp";
 import { useLang } from "../context/LanguageContext";
 import { t } from "../translations";
-import { useState } from "react";
 
 const About = () => {
   const { lang } = useLang();
-  const [audience, setAudience] = useState("clients");
+
   return (
     <section
       id="about"
-      className=" scroll-mt-24 flex flex-col md:flex-row items-center max-w-2xl mx-auto px-6 py-24 gap-12"
+      className="scroll-mt-24 flex flex-col md:flex-row items-center max-w-2xl mx-auto px-6 py-24 gap-12"
     >
       <div className="flex-1">
         <h1 className="text-9xl font-bold mb-8">{t[lang].hi}</h1>
-        <div className="">
-          <button
-            onClick={() =>
-              setAudience((prev) =>
-                prev === "clients" ? "companies" : "clients",
-              )
-            }
-            className=" text-xl mb-2 bg-yellow-300 px-6 py-2 rounded-xl cursor-pointer"
-          >
-            {audience === "clients" ? "For clients" : "For companies"}
-          </button>
-        </div>
         <p className="text-gray-600 mb-6 text-2xl intro-text">
           {t[lang].intro1}{" "}
           <span className="bg-yellow-300">{t[lang].intro2}</span>{" "}
@@ -38,8 +25,18 @@ const About = () => {
       </div>
 
       <div className="flex md:flex-col gap-4 flex-1 min-w-0">
-        <img src={summer} alt="summer" className="rounded-xl w-full min-w-0" />
-        <img src={snow} alt="snow" className="rounded-xl w-full min-w-0" />
+        <img
+          src={summer}
+          alt="summer"
+          className="rounded-xl w-full min-w-0"
+          loading="lazy"
+        />
+        <img
+          src={snow}
+          alt="snow"
+          className="rounded-xl w-full min-w-0"
+          loading="lazy"
+        />
       </div>
     </section>
   );
