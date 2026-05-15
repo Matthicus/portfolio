@@ -21,7 +21,7 @@ const WorkDetail = () => {
               {project.title}
             </h2>
             <h1 className="text-2xl md:text-3xl font-black italic leading-none">
-              Logo, 2025
+              {project.kind}
             </h1>
           </div>
           <div className="pt-2 max-w-sm">

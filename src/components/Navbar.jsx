@@ -29,15 +29,17 @@ const Navbar = () => {
             className="absolute inset-0 w-full h-full opacity-0 logo-face-surprised"
           />
         </div>
-        <button
-          className="text-xl lg:text-3xl cursor-pointer"
-          onClick={toggleLang}
-        >
-          {lang === "en" ? "NL" : "EN"}
-        </button>
       </div>
 
       <ul className="flex items-center gap-6 lg:gap-12 text-xl lg:text-3xl">
+        <li>
+          <button
+            className="text-2xl lg:text-3xl cursor-pointer"
+            onClick={toggleLang}
+          >
+            {lang === "en" ? "NL" : "EN"}
+          </button>
+        </li>
         <li className="hidden lg:block">
           <a
             href="#about"
@@ -46,7 +48,7 @@ const Navbar = () => {
             {t[lang].about}
           </a>
         </li>
-        <li className="flex gap-7 lg:gap-3">
+        <li className="flex gap-3 lg:gap-3">
           <a
             href="https://wa.me/32468217828"
             target="_blank"
@@ -54,7 +56,7 @@ const Navbar = () => {
           >
             <img
               src={whatsapp}
-              className="h-12 w-12 lg:h-8 lg:w-8"
+              className="h-10 w-10 lg:h-8 lg:w-8"
               alt="WhatsApp"
             />
           </a>
@@ -65,7 +67,7 @@ const Navbar = () => {
           >
             <img
               src={insta}
-              className="h-12 w-12 lg:h-8 lg:w-8"
+              className="h-10 w-10 lg:h-8 lg:w-8"
               alt="Instagram"
             />
           </a>
