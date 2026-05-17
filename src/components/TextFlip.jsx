@@ -52,6 +52,7 @@ const TextFlip = () => {
       <div className="lg:hidden grid grid-cols-2 gap-3 px-4">
         {images.map((img, i) => (
           <motion.img
+            loading="lazy"
             key={i}
             src={img.src}
             alt={img.alt}
@@ -95,6 +96,7 @@ const TextFlip = () => {
         >
           {images.map((img, i) => (
             <motion.img
+              loading="lazy"
               key={i}
               src={img.src}
               alt={img.alt}

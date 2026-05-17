@@ -29,6 +29,7 @@ const Work = () => {
               >
                 <motion.img
                   src={project.img}
+                  loading="lazy"
                   alt={project.title}
                   className="w-full rounded-xl"
                   variants={{

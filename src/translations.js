@@ -12,7 +12,7 @@ export const t = {
     intro5: "and frontend development. I can work comfortably with",
     intro6: "Illustrator, Photoshop, InDesign",
     intro7:
-      "and love to build in React. I also dibble dabble in video editing now and again. If you liked this poorly written introduction, don't hesitate to contact me so we can make something great together!",
+      "and love to build in React. I also dibble dabble in video editing now and again. Don't hesitate to contact me so we can make something great together!",
     locatie: "Antwerp, Belgium",
     contact: "LET'S CONNECT!",
     back: " ← BACK",
@@ -30,7 +30,7 @@ export const t = {
     intro5: "en frontend development. Ik werk vlot met",
     intro6: "Illustrator, Photoshop, InDesign",
     intro7:
-      "en bouw graag in React. Af en toe doe ik ook aan videobewerking. Als je deze slecht geschreven introductie toch kon waarderen, aarzel dan niet om contact op te nemen zodat we samen iets moois kunnen maken!",
+      "en bouw graag in React. Af en toe doe ik ook aan videobewerking. Aarzel  niet om contact op te nemen zodat we samen iets moois kunnen maken!",
     locatie: "Antwerpen, België",
     contact: "CONTACTEER MIJ!",
     back: "← TERUG",

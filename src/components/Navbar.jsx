@@ -17,16 +17,19 @@ const Navbar = () => {
             src={logoText}
             alt="Storms Matthice text"
             className="absolute inset-0 w-full h-full logo-text"
+            loading="lazy"
           />
           <img
             src={logoFull}
             alt="logo"
             className="absolute inset-0 w-full h-full logo-face-smile"
+            loading="lazy"
           />
           <img
             src={logoFace}
             alt="logo surprised"
             className="absolute inset-0 w-full h-full opacity-0 logo-face-surprised"
+            loading="lazy"
           />
         </div>
       </div>
@@ -58,6 +61,7 @@ const Navbar = () => {
               src={whatsapp}
               className="h-10 w-10 lg:h-8 lg:w-8"
               alt="WhatsApp"
+              loading="lazy"
             />
           </a>
           <a
@@ -69,6 +73,7 @@ const Navbar = () => {
               src={insta}
               className="h-10 w-10 lg:h-8 lg:w-8"
               alt="Instagram"
+              loading="lazy"
             />
           </a>
         </li>

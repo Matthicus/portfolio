@@ -37,6 +37,7 @@ const WorkDetail = () => {
             src={project.images[0]}
             alt={project.title}
             className="w-full rounded-xl object-cover"
+            loading="lazy"
           />
         </div>
 
