@@ -119,11 +119,11 @@ const TextFlip = () => {
         </div>
       </div>
 
-      <Link to="/work">
+      <a href="#work">
         <h2 className="max-w-[1180px] mx-auto px-6 text-center lg:text-right text-5xl lg:text-3xl font-bold mt-4 lg:-mt-8 cursor-pointer">
           {t[lang].moreWork}
         </h2>
-      </Link>
+      </a>
     </section>
   );
 };

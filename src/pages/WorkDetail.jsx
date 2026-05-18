@@ -60,7 +60,7 @@ const WorkDetail = () => {
         {/* Back link */}
         <div className="py-8">
           <Link
-            to="/work"
+            to="/"
             className="text-2xl lg:text-xl uppercase font-bold tracking-widest hover:opacity-50 transition-opacity"
           >
             {t[lang].back}

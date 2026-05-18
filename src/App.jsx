@@ -5,8 +5,7 @@ import Navbar from "./components/Navbar";
 import TextFlip from "./components/TextFlip";
 import Footer from "./components/Footer";
 import About from "./components/About";
-
-import Work from "./pages/Work";
+import Work from "./components/Work";
 
 function App() {
   return (
@@ -20,11 +19,11 @@ function App() {
                 <Navbar />
                 <TextFlip />
                 <About />
+                <Work />
                 <Footer />
               </div>
             }
           />
-          <Route path="/work" element={<Work />} />
           <Route path="/work/:id" element={<WorkDetail />} />
         </Routes>
       </div>

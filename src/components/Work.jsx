@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
-import Footer from "../components/Footer";
+
 import projects from "../data/projects";
 
 const springBounce = { type: "spring", stiffness: 400, damping: 12 };
@@ -9,16 +9,10 @@ const Work = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
-        <div className="text-right pt-15 pr-17">
-          <Link
-            to="/"
-            className="inline-block text-3xl pl-6 cursor-pointer relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bottom-0 after:left-0 after:bg-black after:transition-all after:duration-300 hover:after:w-full"
-          >
-            &larr; Home
-          </Link>
-        </div>
-
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-16">
+        <section
+          id="work"
+          className="scroll-mt-48 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-16"
+        >
           {projects.map((project) => (
             <Link to={`/work/${project.id}`} key={project.id}>
               <motion.div
@@ -58,7 +52,6 @@ const Work = () => {
           ))}
         </section>
       </main>
-      <Footer />
     </div>
   );
 };
