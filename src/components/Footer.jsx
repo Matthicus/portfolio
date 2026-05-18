@@ -29,12 +29,12 @@ const Footer = () => {
           <div className="flex flex-wrap gap-1 sm:gap-4 justify-center">
             <a
               href="mailto:matthice.storms@hotmail.com"
-              className="text-3xl hover:text-white cursor-pointer"
+              className="mail-link text-3xl hover:text-white cursor-pointer"
             >
               matthice.storms@hotmail.com
             </a>
 
-            <p className="text-3xl cursor-pointer hover:text-white">
+            <p className="in-link text-3xl cursor-pointer hover:text-white">
               linkedin.com/in/matthice
             </p>
           </div>

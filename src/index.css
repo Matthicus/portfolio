@@ -58,6 +58,54 @@ body {
   font-style: normal;
 }
 
+.mail-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: black;
+  z-index: -1;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+
+.mail-link:hover::before {
+  width: 100%;
+}
+
+.mail-link {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 5px 10px;
+}
+
+.in-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: black;
+  z-index: -1;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+
+.in-link:hover::before {
+  width: 100%;
+}
+
+.in-link {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 5px 10px;
+}
+
 
 
 .intro-text {
