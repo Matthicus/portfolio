@@ -37,8 +37,17 @@ const Footer = () => {
             <p className="in-link text-3xl cursor-pointer hover:text-white">
               linkedin.com/in/matthice
             </p>
+
+            <a
+              href="/storms_cv_2026.pdf"
+              download
+              className=" cv-button text-2xl font-bold bg-white p-2 rounded-xl cursor-pointer"
+            >
+              CV ↓
+            </a>
           </div>
         </section>
+
         <section className="flex flex-col items-center gap-1">
           <p className="text-2xl bg-white p-2 rounded-xl antwerp">
             {t[lang].locatie}
