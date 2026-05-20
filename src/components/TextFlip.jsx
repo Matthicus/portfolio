@@ -1,11 +1,10 @@
-import { useState, useEffect } from "react";
-import { motion } from "motion/react";
+import { useState, useEffect, useRef } from "react";
+import { useScroll, motion, useTransform } from "motion/react";
 import menuHero from "../assets/menu_bite.webp";
 import dudeHero from "../assets/dude_hero_page.webp";
 import coffeeHero from "../assets/coffee_hero_page.webp";
 import chipsHero from "../assets/chips_bite.webp";
 import alienhero from "../assets/alien_hero_page.webp";
-import { Link } from "react-router-dom";
 import { useLang } from "../context/LanguageContext";
 import { t } from "../translations";
 
@@ -36,6 +35,11 @@ const TextFlip = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
   const { lang } = useLang();
 
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll();
+  const opacity = useTransform(scrollYProgress, [0.04, 0.4], [1, 0]);
+  const x = useTransform(scrollYProgress, [0.04, 0.4], [0, 200]);
+
   useEffect(() => {
     const handleResize = () => {
       setScale(Math.min(1, window.innerWidth / 1300));
@@ -47,7 +51,7 @@ const TextFlip = () => {
   }, []);
 
   return (
-    <section className="pt-12 pb-12">
+    <motion.section ref={ref} style={{ opacity, x }} className="pt-12 pb-12">
       {/* Mobile grid */}
       <div className="lg:hidden grid grid-cols-2 gap-3 px-4">
         {images.map((img, i) => (
@@ -124,7 +128,7 @@ const TextFlip = () => {
           {t[lang].moreWork}
         </h2>
       </a>
-    </section>
+    </motion.section>
   );
 };
 
