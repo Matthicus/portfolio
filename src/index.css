@@ -58,79 +58,83 @@ body {
   font-style: normal;
 }
 
-.mail-link::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: black;
-  z-index: -1;
-  transition: 0.4s;
-  border-radius: 10px;
-}
+@media (hover: hover) {
 
-.mail-link:hover::before {
-  width: 100%;
-}
+  .mail-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    transition: 0.4s;
+    border-radius: 10px;
+  }
 
-.mail-link {
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  padding: 5px 10px;
-}
+  .mail-link:hover::before {
+    width: 100%;
+  }
 
-.in-link::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: black;
-  z-index: -1;
-  transition: 0.4s;
-  border-radius: 10px;
-}
+  .mail-link {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding: 5px 10px;
+  }
 
-.in-link:hover::before {
-  width: 100%;
-}
+  .in-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    transition: 0.4s;
+    border-radius: 10px;
+  }
 
-.in-link {
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  padding: 5px 10px;
-}
+  .in-link:hover::before {
+    width: 100%;
+  }
 
-.cv-button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 0;
-  background: #ffd900;
-  z-index: -1;
-  transition: 0.4s;
-  border-radius: 10px;
-}
+  .in-link {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding: 5px 10px;
+  }
 
-.cv-button:hover::before {
-  height: 100%;
-}
+  .cv-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #ffd900;
+    z-index: -1;
+    transition: 0.4s;
+    border-radius: 10px;
+  }
 
-.cv-button {
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  padding: 5px 10px;
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: 600;
-  font-style: normal;
+  .cv-button:hover::before {
+    height: 100%;
+  }
+
+  .cv-button {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding: 5px 10px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
 }
 
 
