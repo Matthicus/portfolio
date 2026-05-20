@@ -12,7 +12,7 @@ export const t = {
     intro5: "and frontend development. I can work comfortably with",
     intro6: "Illustrator, Photoshop, InDesign",
     intro7:
-      "and love to build in React. I also dibble dabble in video editing now and again. Don't hesitate to contact me so we can make something great together!",
+      "and love to build in React. I also dibble dabble in video editing now and again. Don't hesitate to contact me so we can make something cool together!",
     locatie: "Antwerp, Belgium",
     contact: "LET'S CONNECT!",
     back: " ← BACK",
