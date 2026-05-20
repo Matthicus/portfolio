@@ -10,7 +10,7 @@ const Navbar = () => {
   const { lang, toggleLang } = useLang();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white z-50 flex items-center justify-around  lg:justify-between pt-4 lg:pt-15 pb-5 px-6 md:px-20 lg:px-40">
+    <nav className="fixed top-0 left-0 right-0 bg-white z-50 flex items-center justify-around  lg:justify-between pt-15 lg:pt-4 lg:pt-15 pb-5 px-6 md:px-20 lg:px-40">
       <div className="flex items-center gap-6 lg:gap-12">
         <div className="relative w-28 h-28 md:w-36 md:h-36 cursor-pointer logo-container">
           <img
