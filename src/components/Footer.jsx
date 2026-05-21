@@ -34,9 +34,13 @@ const Footer = () => {
               matthice.storms@hotmail.com
             </a>
 
-            <p className="in-link text-3xl cursor-pointer hover:text-white">
+            <a
+              href="https://www.linkedin.com/in/matthice-storms-03b8b6410/"
+              target="_blank"
+              className="in-link text-3xl cursor-pointer hover:text-white"
+            >
               linkedin.com/in/matthice
-            </p>
+            </a>
 
             <a
               href="/storms_cv_2026.pdf"
