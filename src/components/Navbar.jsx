@@ -5,9 +5,11 @@ import insta from "../assets/instagram-53.png";
 import whatsapp from "../assets/whatsapp.png";
 import { useLang } from "../context/LanguageContext";
 import { t } from "../translations";
+import { motion } from "motion/react";
 
 const Navbar = () => {
   const { lang, toggleLang } = useLang();
+  const isDesktop = window.innerWidth >= 1024;
 
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white z-50 flex items-center justify-around  lg:justify-between pt-15 lg:pt-4 lg:pt-15 pb-5 px-6 md:px-20 lg:px-40">
@@ -57,11 +59,13 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <motion.img
               src={whatsapp}
               className="h-10 w-10 lg:h-8 lg:w-8"
               alt="WhatsApp"
               loading="lazy"
+              whileHover={isDesktop ? { scale: 1.1 } : {}}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
             />
           </a>
           <a
@@ -69,11 +73,13 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <motion.img
               src={insta}
               className="h-10 w-10 lg:h-8 lg:w-8"
               alt="Instagram"
               loading="lazy"
+              whileHover={isDesktop ? { scale: 1.1 } : {}}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
             />
           </a>
         </li>
