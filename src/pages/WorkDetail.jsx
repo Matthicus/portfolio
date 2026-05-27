@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import { useLang } from "../context/LanguageContext";
 import { t } from "../translations";
 import { motion } from "motion/react";
+import ScrollToTop from "../components/ScrollToTopp";
 
 const WorkDetail = () => {
   const { id } = useParams();
@@ -14,6 +15,7 @@ const WorkDetail = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <ScrollToTop />
       <div className="flex-1 px-6 md:px-12 lg:px-24">
         {/* Header */}
         <div className="flex flex-col lg:flex-row items-center justify-around pt-12 pb-6 mb-10">
