@@ -3,6 +3,7 @@ import projects from "../data/projects";
 import Footer from "../components/Footer";
 import { useLang } from "../context/LanguageContext";
 import { t } from "../translations";
+import { motion } from "motion/react";
 
 const WorkDetail = () => {
   const { id } = useParams();
@@ -41,20 +42,20 @@ const WorkDetail = () => {
           />
         </div>
 
-        {/* Two column images */}
-        <div className="grid grid-cols-2 gap-4 mb-4">
-          <img
-            src={project.images[1]}
-            alt=""
-            className="w-1/2 mx-auto mt-15  rounded-xl object-cover"
-            loading="lazy"
-          />
-          <img
-            src={project.images[2]}
-            alt=""
-            className="w-full rounded-xl object-cover"
-            loading="lazy"
-          />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {project.images.slice(1).map((img, i) => (
+            <motion.img
+              key={i}
+              src={img}
+              alt={`${project.title} ${i + 2}`}
+              loading="lazy"
+              className="rounded-xl object-cover w-full"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              viewport={{ margin: "-100px" }}
+            />
+          ))}
         </div>
 
         {/* Back link */}
