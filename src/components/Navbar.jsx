@@ -12,7 +12,16 @@ import { useState } from "react";
 const Navbar = () => {
   const { lang, toggleLang } = useLang();
   const [isOpen, setIsOpen] = useState(false);
+  const handleScrollTo = (id) => {
+    setIsOpen(false);
 
+    setTimeout(() => {
+      document.getElementById(id)?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }, 150);
+  };
   return (
     <>
       <motion.nav
@@ -121,9 +130,9 @@ const Navbar = () => {
             </button>
           </li>
           <li>
-            <a href="#about" onClick={() => setIsOpen(false)}>
+            <button onClick={() => handleScrollTo("about")}>
               {t[lang].about}
-            </a>
+            </button>
           </li>
           <li>
             <button className="text-2xl cursor-pointer" onClick={toggleLang}>
