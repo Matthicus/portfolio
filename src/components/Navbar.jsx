@@ -100,7 +100,7 @@ const Navbar = () => {
               />
             </a>
           </li>
-          <li className="lg:hidden">
+          <li className="lg:hidden ">
             <button
               onClick={() => setIsOpen((prev) => !prev)}
               aria-label="Toggle menu"
@@ -130,16 +130,19 @@ const Navbar = () => {
             </button>
           </li>
           <li>
-            <button onClick={() => handleScrollTo("about")}>
+            <button
+              className="text-3xl "
+              onClick={() => handleScrollTo("about")}
+            >
               {t[lang].about}
             </button>
           </li>
           <li>
-            <button className="text-2xl cursor-pointer" onClick={toggleLang}>
+            <button className="text-3xl " onClick={toggleLang}>
               {lang === "en" ? "NL" : "EN"}
             </button>
           </li>
-          <li className="flex gap-3">
+          <li className="flex gap-3 pb-4">
             <a
               href="https://wa.me/32468217828"
               target="_blank"
