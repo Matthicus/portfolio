@@ -10,6 +10,9 @@ import vermeiren2 from "../assets/vermeiren_assets/front_flat.webp";
 import vermeiren3 from "../assets/vermeiren_assets/back_flat.webp";
 
 import mimosaCover from "../assets/mimosa_assets/cover_image.webp";
+import mimosa1 from "../assets/mimosa_assets/mimosa1.webp";
+import mimosa2 from "../assets/mimosa_assets/mimosa2.webp";
+import mimosa3 from "../assets/mimosa_assets/mimosa_3.webp";
 
 import chipsShirt from "../assets/chipsdale_assets/grid_image_2.png";
 import chipsTruck from "../assets/chipsdale_assets/foodtruck_mockup.webp";
@@ -104,21 +107,23 @@ const projects = [
     kind: "Folder",
     img: vermeirenCover,
     desc: {
-      en: "Penpal is one of my all-time favourite horror stories from across the internet. I used to be a huge horror nerd and was obsessed with creepypasta throughout my teenage years. Creepypastas are short horror stories that spread online, usually through forums, social media, or dedicated websites. This one gained so much traction it eventually turned into a full-length novel. After listening to the story again I was overcome with inspiration and decided to design a fan-made book cover.",
-      nl: "Penpal is een van mijn all-time favoriete horrorverhalen van het internet. Ik was vroeger een enorme horror-nerd en was in mijn tienerjaren geobsedeerd door creepypasta. Creepypasta’s zijn korte horrorverhalen die online worden verspreid, meestal via forums, sociale media of speciale websites. Dit verhaal kreeg zoveel aandacht dat het uiteindelijk werd omgezet in een volwaardige roman. Nadat ik het verhaal opnieuw had beluisterd, werd ik overweldigd door inspiratie en besloot ik een fan-made boekcover te ontwerpen.",
+      en: "For a design project, I created an informative brochure in the brand style of Vermeiren Princeps. The goal was to communicate the company’s production process and showcase the different activities and achievements within their factory. I focused on translating their identity into a clear and visually appealing layout that highlights their expertise, craftsmanship, and capabilities.",
+
+      nl: "Voor een designproject heb ik een informatieve brochure ontworpen in de huisstijl van Vermeiren Princeps. Het doel van de brochure was om duidelijk te communiceren welke processen, technieken en realisaties binnen de fabriek worden uitgevoerd. Hierbij heb ik de bestaande merkidentiteit vertaald naar een overzichtelijke en visueel aantrekkelijke lay-out die hun vakkennis, productiecapaciteiten en expertise in de kijker zet.",
     },
     images: [vermeirenCover, vermeiren1, vermeiren2, vermeiren3],
   },
   {
     id: "mimosa",
-    title: "Mimosa lingeria rebranding",
+    title: "Mimosa lingerie rebranding",
     kind: "Rebranding",
     img: mimosaCover,
     desc: {
-      en: "Penpal is one of my all-time favourite horror stories from across the internet. I used to be a huge horror nerd and was obsessed with creepypasta throughout my teenage years. Creepypastas are short horror stories that spread online, usually through forums, social media, or dedicated websites. This one gained so much traction it eventually turned into a full-length novel. After listening to the story again I was overcome with inspiration and decided to design a fan-made book cover.",
-      nl: "Penpal is een van mijn all-time favoriete horrorverhalen van het internet. Ik was vroeger een enorme horror-nerd en was in mijn tienerjaren geobsedeerd door creepypasta. Creepypasta’s zijn korte horrorverhalen die online worden verspreid, meestal via forums, sociale media of speciale websites. Dit verhaal kreeg zoveel aandacht dat het uiteindelijk werd omgezet in een volwaardige roman. Nadat ik het verhaal opnieuw had beluisterd, werd ik overweldigd door inspiratie en besloot ik een fan-made boekcover te ontwerpen.",
+      en: "For a design project, I created a complete rebranding concept for Mimosie Lingerie. The project focused on redesigning the Instagram feed and overall visual identity to create a more consistent, elegant, and engaging brand presence. I developed a new visual direction, content style, and branding approach that reflects the character and aesthetic of the lingerie brand.",
+
+      nl: "Voor een designopdracht heb ik een volledige rebranding uitgewerkt voor Mimosie Lingerie. Hierbij heb ik de Instagram-feed en de algemene visuele identiteit opnieuw vormgegeven met als doel een consistente, stijlvolle en aantrekkelijke merkuitstraling te creëren. De focus lag op het ontwikkelen van een passende visuele richting, contentstijl en branding die aansluit bij de uitstraling van het lingeriemerk.",
     },
-    images: [vermeirenCover, vermeiren1, vermeiren2, vermeiren3],
+    images: [mimosaCover, mimosa1, mimosa2, mimosa3],
   },
 ];
 
