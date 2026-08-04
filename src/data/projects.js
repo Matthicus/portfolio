@@ -34,6 +34,8 @@ import back from "../assets/penpal_assets/grid_item_2.webp";
 import frontBackFlat from "../assets/penpal_assets/grid_item_1.webp";
 import overloadIcons from "../assets/overload_assets/grid_item_1.webp";
 import overloadConcept from "../assets/overload_assets/grid_item_2.webp";
+import showcaseVid from "../assets/overload_assets/showcase_vid_overload.mp4";
+
 const projects = [
   {
     id: "naomis-pedicure",
@@ -83,7 +85,8 @@ const projects = [
     id: "overload",
     title: "Overload",
     kind: "app",
-    img: overloadMockup,
+    img: showcaseVid,
+    mediaType: "video",
     desc: {
       en: "Overload was a progressive fitness tracker concept app I cooked up last year for my full-stack development final project. I did not end up using it since the core idea had already been done more than a thousand times before. However, I really like the design and feel of the design, hence why I’m including it here.",
       nl: "Overload was een concept-app voor een progressieve fitness tracker die ik vorig jaar bedacht heb voor mijn full-stack eindproject. Uiteindelijk heb ik het niet gebruikt, aangezien het kernidee al meer dan duizend keer eerder was gedaan. Toch vind ik het design en de feel van het ontwerp nog steeds erg sterk, daarom neem ik het hier mee op.",

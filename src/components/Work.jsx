@@ -37,16 +37,42 @@ const Work = () => {
                   initial="rest"
                   animate="rest"
                 >
-                  <motion.img
-                    src={project.img}
-                    loading="lazy"
-                    alt={project.title}
-                    className="w-full rounded-xl"
-                    variants={{
-                      rest: { y: 0, scale: 1 },
-                      hover: { y: -16, scale: 1.04, transition: springBounce },
-                    }}
-                  />
+                  {project.img.endsWith(".mp4") ? (
+                    <motion.video
+                      src={project.img}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      ref={(el) => {
+                        if (el) el.playbackRate = 2;
+                      }}
+                      className="w-full rounded-xl"
+                      variants={{
+                        rest: { y: 0, scale: 1 },
+                        hover: {
+                          y: -16,
+                          scale: 1.04,
+                          transition: springBounce,
+                        },
+                      }}
+                    />
+                  ) : (
+                    <motion.img
+                      src={project.img}
+                      loading="lazy"
+                      alt={project.title}
+                      className="w-full rounded-xl"
+                      variants={{
+                        rest: { y: 0, scale: 1 },
+                        hover: {
+                          y: -16,
+                          scale: 1.04,
+                          transition: springBounce,
+                        },
+                      }}
+                    />
+                  )}
 
                   <motion.div
                     className="absolute bottom-0 left-0 right-0 bg-white px-4 py-3"
