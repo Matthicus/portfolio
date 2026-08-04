@@ -119,7 +119,7 @@ const projects = [
     kind: "Rebranding",
     img: mimosaCover,
     desc: {
-      en: "For a design project, I created a complete rebranding concept for Mimosie Lingerie. The project focused on redesigning the Instagram feed and overall visual identity to create a more consistent, elegant, and engaging brand presence. I developed a new visual direction, content style, and branding approach that reflects the character and aesthetic of the lingerie brand.",
+      en: "For a design project, I created a complete rebranding concept for Mimosa Lingerie. The project focused on redesigning the Instagram feed and overall visual identity to create a more consistent, elegant, and engaging brand presence. I developed a new visual direction, content style, and branding approach that reflects the character and aesthetic of the lingerie brand.",
 
       nl: "Voor een designopdracht heb ik een volledige rebranding uitgewerkt voor Mimosie Lingerie. Hierbij heb ik de Instagram-feed en de algemene visuele identiteit opnieuw vormgegeven met als doel een consistente, stijlvolle en aantrekkelijke merkuitstraling te creëren. De focus lag op het ontwikkelen van een passende visuele richting, contentstijl en branding die aansluit bij de uitstraling van het lingeriemerk.",
     },
