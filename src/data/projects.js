@@ -14,6 +14,10 @@ import mimosa1 from "../assets/mimosa_assets/mimosa1.webp";
 import mimosa2 from "../assets/mimosa_assets/mimosa2.webp";
 import mimosa3 from "../assets/mimosa_assets/mimosa_3.webp";
 
+import boosterCover from "../assets/photoediting_assets/cover_image kopie.webp";
+import boosterAssets from "../assets/photoediting_assets/assets.webp";
+import boosterVisuals from "../assets/photoediting_assets/all_visuals.webp";
+
 import chipsShirt from "../assets/chipsdale_assets/grid_image_2.png";
 import chipsTruck from "../assets/chipsdale_assets/foodtruck_mockup.webp";
 import chipsPakket from "../assets/chipsdale_assets/grid_image_1.png";
@@ -127,6 +131,18 @@ const projects = [
       nl: "Voor een designopdracht heb ik een volledige rebranding uitgewerkt voor Mimosie Lingerie. Hierbij heb ik de Instagram-feed en de algemene visuele identiteit opnieuw vormgegeven met als doel een consistente, stijlvolle en aantrekkelijke merkuitstraling te creëren. De focus lag op het ontwikkelen van een passende visuele richting, contentstijl en branding die aansluit bij de uitstraling van het lingeriemerk.",
     },
     images: [mimosaCover, mimosa1, mimosa2, mimosa3],
+  },
+  {
+    id: "photoshop",
+    title: "Good old fashioned photoshop",
+    kind: "Photo Editing",
+    img: boosterCover,
+    desc: {
+      en: "Adventures in the wondrous world of Photoshop",
+
+      nl: "Op avontuur in de wonderlijke wereld van Photoshop",
+    },
+    images: [boosterCover, boosterAssets, boosterVisuals],
   },
 ];
 
